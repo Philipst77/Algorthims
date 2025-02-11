@@ -27,7 +27,8 @@ public class HashMap2 {
                 // and then we make each unique signature of each word a key in our hash map
                 // and anagrams will have the same unique signature because they just have the
                 // same letter in different order
-                String key = Arrays.toString(store);
+                String key = Arrays.toString(store); // This converts the count[] array into a String representation,
+                                                     // which is then used as the key in our HashMap.
 
                 if (!freq.containsKey(key)) {
                     freq.put(key, new ArrayList<>()); // if the key which is the unique method signature isnt in the
